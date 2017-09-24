@@ -76,6 +76,28 @@ Status ListInsert(SqList &L,int i,ElemType e)
 	return OK;
 }
 
+ElemType GetElem(SqList &L,int i）
+{
+ElemType *e;
+if(!L.elem || i>L.length || i<1)
+{
+exit(ERROR);
+}
+e=L.elem+i-1;
+return *e;
+}
+
+int LocateElem(SqList &L,ElemType e)
+{
+int i;
+if(!L.elem) exit(ERROR);
+for(i=0;i<L.length-1;i++)
+{
+	if(e=L.elem(i) return i+1;
+}
+return 0;
+}
+
 int main()
 {
 	SqList L;
